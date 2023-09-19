@@ -7,4 +7,5 @@ import (
 func main() {
 	helper.Atualizar("lsp.lua", helper.LinesToRemove)
 	helper.Atualizar("shortcuts.lua", helper.LinesToRemove)
+	helper.Atualizar("plugins.lua", helper.LinesToRemove)
 }

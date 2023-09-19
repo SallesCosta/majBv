@@ -27,4 +27,11 @@ var LinesToRemove = []string{
 	`  ["<leader>ev"] = { "<cmd>e $MYVIMRC<cr>", " Open init.lua" },`,
 	`  ["<leader>eb"] = { "<cmd>e " .. helpers.config_path .. "/better-vim.lua<cr>", " Open better-vim.lua" },`,
 	`  ["<leader>q"] = { "<cmd>:Bdelete<cr>", " Close buffer, not window", noremap = true },`,
+
+	`  load_theme({ "arcticicestudio/nord-vim" }),`,
+	`  load_theme({ "Mofiqul/dracula.nvim" }),`,
+	`  load_theme({ "ayu-theme/ayu-vim" }),`,
+	`  load_theme({ "drewtempelmeyer/palenight.vim" }),`,
+	`  load_theme({ "folke/tokyonight.nvim" }),`,
+	`  load_theme({ "olimorris/onedarkpro.nvim" }),`,
 }
