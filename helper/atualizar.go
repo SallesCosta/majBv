@@ -39,6 +39,18 @@ func Atualizar(fileName string, linesToRemove []string) {
 		line := scanner.Text()
 		removeLine := false
 
+		toBeReplaced := `    ["<C-Space>"] = cmp.mapping.complete {},`
+		shouldBe := `    ["<C-j>"] = cmp.mapping.complete {},`
+
+		if line == toBeReplaced {
+			_, err := fmt.Fprintln(newFile, shouldBe)
+			if err != nil {
+				fmt.Println("Erro ao substituir essa linha:", err)
+				return
+			}
+			removeLine = true
+		}
+
 		for _, lineToRemove := range linesToRemove {
 			if line == lineToRemove {
 				removeLine = true
