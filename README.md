@@ -1,4 +1,4 @@
-# majBv
+# majBv - Mettre à Jour BetterVim
 
 majBv is a Go-based utility designed to automate the process of updating and 
 customizing Neovim configurations ([BetterVim](https://bettervim.com/)). It is particularly useful for 
