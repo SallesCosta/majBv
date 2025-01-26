@@ -20,19 +20,26 @@ var LinesToRemove = []string{
 	`    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))`,
 	`  end, "[W]orkspace [L]ist Folders")`,
 
-	`  ["<leader>cl"] = { "<cmd>nohl<cr>", " Clear search highlights" },`,
 	`  ["<c-p>"] = { telescope.find_files, "Find file" },`,
 	`  ["<c-f>"] = { telescope.live_grep, "Find word" },`,
 	`  ["<c-n>"] = { "<cmd>NvimTreeToggle<cr>", "Open file explorer", noremap = true },`,
-	`  ["<leader>ev"] = { "<cmd>e $MYVIMRC<cr>", " Open init.lua" },`,
-	`  ["<leader>eb"] = { "<cmd>e " .. constants.CONFIG_PATH .. "/better-vim.lua<cr>", " Open better-vim.lua" },`,
-	`  ["<leader>q"] = { "<cmd>:Bdelete<cr>", " Close buffer, not window", noremap = true },`,
 
-	`  helpers.should_load_theme("catppuccin", utils.load_theme({ "catppuccin/nvim", name = "catppuccin" })),`,
-	`  helpers.should_load_theme("dracula", utils.load_theme({ "Mofiqul/dracula.nvim" })),`,
-	`  helpers.should_load_theme("ayu", utils.load_theme({ "ayu-theme/ayu-vim" })),`,
-	`  helpers.should_load_theme("palenight", utils.load_theme({ "drewtempelmeyer/palenight.vim" })),`,
-	`  helpers.should_load_theme("tokyonight", utils.load_theme({ "folke/tokyonight.nvim" })),`,
-	`  helpers.should_load_theme("nord", utils.load_theme({ "arcticicestudio/nord-vim" })),`,
-	`  helpers.should_load_theme("onedarkpro", utils.load_theme({ "olimorris/onedarkpro.nvim" })),`,
+	`  helpers.should_load_theme("catppuccin", { "catppuccin/nvim", name = "catppuccin" }),`,
+	`  helpers.should_load_theme("dracula", { "Mofiqul/dracula.nvim" }),`,
+	`  helpers.should_load_theme("ayu", { "ayu-theme/ayu-vim" }),`,
+	`  helpers.should_load_theme("palenight", { "drewtempelmeyer/palenight.vim" }),`,
+	`  helpers.should_load_theme("tokyonight", { "folke/tokyonight.nvim" }),`,
+	`  helpers.should_load_theme("nord", { "arcticicestudio/nord-vim" }),`,
+	`  helpers.should_load_theme("onedark", { "olimorris/onedarkpro.nvim" }),`,
+
+	`  { "<leader>cl", "<cmd>nohl<cr>", desc = " Clear search highlights" },`,
+
+	`  { "<leader>ev", "<cmd>e $MYVIMRC<cr>", desc = " Open init.lua" },`,
+	`  { "<leader>eb", "<cmd>e " .. constants.CONFIG_PATH .. "/better-vim.lua<cr>", desc = " Open better-vim.lua" },`,
+
+	`  { "<leader>c", group = "LSP / Highlights" },`,
+	`  { "<leader>e", group = "Configuration" },`,
+	`	 { "<leader>w", group = "LSP Workspace" },`,
+	`  { "<leader>w", group = "LSP Workspace" },`,
+	`  { "<leader>q", "<cmd>:Bdelete<cr>", desc = " Close buffer, not window", noremap = true },`,
 }

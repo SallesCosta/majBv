@@ -33,6 +33,10 @@ The lines to be removed are defined in the `helper/lines.go` file. You can modif
 
 To build the project, you need to have Go installed on your system. You can then use the `go build` command to build the project.
 
+## 
+
+`sudo mv majBv /usr/local/bin/ && sudo chmod +x /usr/local/bin/majBv`
+
 ## Contributing
 
 Contributions are welcome. Please feel free to submit a pull request or open an issue.
